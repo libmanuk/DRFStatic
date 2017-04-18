@@ -190,7 +190,3 @@ fwrite($write, $html);
 
 //close write function
 fclose($write);
-?>
-
-
-
