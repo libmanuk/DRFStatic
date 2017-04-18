@@ -190,12 +190,6 @@ fwrite($write, $html);
 
 //close write function
 fclose($write);
-
-//echo success
-//echo "drf article $drfid processed successfully!\n";
-
-die;
-
 ?>
 
 
