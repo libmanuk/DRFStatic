@@ -37,16 +37,17 @@ $search = array("\n", "\"");
 $replace = array(" ", " ");
 $nolinetxt = str_replace($search,$replace,$text);
 
-//delete old HTML file if one exists
-unlink("$catalog/$drfdecade/$drfyear/$drfid.html");
-
-//variable to write HTML file given the same filename as the json drf article file
-$write = fopen("$catalog/$drfdecade/$drfyear/$drfid.html", "w");
+//delete old HTML file if one exists, else set variable to write HTML file given the same filename as the JSON DRF article file
+if (file_exists($catalog/$drfdecade/$drfyear/$drfid.html)) {
+    unlink("$catalog/$drfdecade/$drfyear/$drfid.html");
+} else {
+    $write = fopen("$catalog/$drfdecade/$drfyear/$drfid.html", "w");
+}
 
 //read in contents of HTML table of contents for article and store as a variable
 $toc = file_get_contents("$tocs/$drfdecade/$issueid.html", true);
 
-//generate html file putting JSON values in as needed
+//generate HTML file putting JSON values in as needed
 $html = <<<HTML
 
 <!DOCTYPE html>
