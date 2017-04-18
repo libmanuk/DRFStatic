@@ -40,8 +40,6 @@ $nolinetxt = str_replace($search,$replace,$text);
 //delete old HTML file if one exists, else proceed
 if (file_exists($catalog/$drfdecade/$drfyear/$drfid.html)) {
     unlink("$catalog/$drfdecade/$drfyear/$drfid.html");
-} else {
-   //do nothing
 }
 
 //set variable to write HTML file given the same filename as the JSON DRF article file
