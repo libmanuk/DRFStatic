@@ -61,7 +61,7 @@ $html = <<<HTML
 <meta name="keywords" content="horses, horse racing, horse racing tracks">
 <meta name="pubdate" content="$issuedate">
 <meta name="type" content="$articletype">
-<title>$articletitle  $articletype -  Page $pageno, Daily Racing Form, $json_metadata->62_t</title>
+<title>$articletitle  $articletype -  Page $pageno, Daily Racing Form, $issuedate</title>
 <link href="../../css/drf.css" media="all" rel="stylesheet">
 <link href="../../css/drf_extra.css" media="all" rel="stylesheet">
 <script src="../../scripts/jquery-1.12.0.min.js"></script>
