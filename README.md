@@ -1,1 +1,1 @@
-# DRFStatic
+# minimal-solr-cm
