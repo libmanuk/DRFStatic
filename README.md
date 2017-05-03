@@ -1,1 +1,3 @@
-# minimal-solr-cm
+# minimalCM
+
+
