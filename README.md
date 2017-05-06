@@ -14,7 +14,12 @@ Client Side: SolrStrap - JavaScript (https://github.com/fergiemcdowall/solrstrap
 
 Installation Notes
 
+A proxy for the Solr install is recommended.  Some methods for this can be found at:  
+https://github.com/evolvingweb/ajax-solr/wiki/Solr-proxies
+
 ITEM VIEW
+
+minimalCM utilizes a static store of HTML pages in order to facilitate item views.
 
 
 METADATA
